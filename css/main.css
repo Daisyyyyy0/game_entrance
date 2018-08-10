@@ -9,6 +9,9 @@ a{
     color: aliceblue;
     display: block;
 }
+img{
+    display: block;
+}
 
 #wrap{
     display: flex;
@@ -54,7 +57,7 @@ a{
     display: block;
 }
 .sec1_player_detail{
-    width: 66%;
+    width: 67%;
     height: 100%;
    border-left:2px whitesmoke solid;
     float: left;
@@ -118,13 +121,12 @@ a{
     background-color: transparent;
     position: relative;
 
-    
-
 }
 .sec2_content{
+    padding-top: 5%;
     height: 100%;
     position: relative;
-    bottom: -5%;
+    top: 0;
     left: 0;
     display: flex;
     justify-content: space-around;
@@ -133,7 +135,11 @@ a{
 .sec2_girl{
     margin-right: 5%;
     position: relative;
-    bottom: -3%;
+    bottom: -5%;
+    transition: transform .3s;
+}
+.sec2_girl:hover{
+    transform: scale(1.03);
 }
 .sec2_rooms{
     display: flex;
@@ -145,10 +151,57 @@ a{
     left: -5%;
     bottom: -5%;
 }
+.sec2_rooms:last-child{
+    margin-bottom: 0;
+
+}
 .sec2_rooms_entrance{
-    margin-bottom: 10%;
+    position: relative;
+    margin-bottom: 15%;
+    box-shadow:5px 10px 18px rgba(0, 0, 0, 0.8);
     
 }
+
+.sec2_rooms_entrance img{
+    border-radius: 7px;
+    transition: all .1s;
+
+}
+.sec2_rooms_entrance img:hover{
+    transform: scale(1.1);    
+}
+.sec2_rooms_entrance:before{
+    content: "";
+    border-radius: 7px;
+    transition: all .1s;
+    z-index: 3;
+}
+
+.sec2_rooms_entrance:hover:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(256,256,256,.16);
+    /* transform: scale(1.1); */
+
+
+}
+.sec2_rooms_entrance:active:before{
+    background-color:rgba(20,20,20,.24);
+    transition: all 0s;
+
+}
+
+.sec2_rooms_entrance:active{
+    bottom: -1px;
+    right: -1px;
+    box-shadow:5px 10px 8px rgba(0, 0, 0, 0.8);
+    
+}
+
 .sec2_back{
     position: absolute;
     top: 0;
@@ -158,6 +211,7 @@ a{
     padding: 20px 30px;
     font-size: 20px;
     transition: all .3s;
+    z-index: 2;
 }
 .sec2_back:hover{
     background-color: rgb(230, 164, 65);
