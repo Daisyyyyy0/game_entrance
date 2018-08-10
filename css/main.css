@@ -1,0 +1,164 @@
+
+*,html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+
+#wrap{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: 50% 50%; 
+    background-repeat:no-repeat;
+}
+
+.sec1{
+    flex: 0 1 23%;
+    order:1;
+    border:2px whitesmoke solid;
+    border-right: transparent;
+    
+    background-color: transparent;
+    position: relative;
+
+}
+
+.sec1_player{
+    width: 100%;
+    height: 10vh;
+   border-bottom:2px whitesmoke solid;
+    position: absolute;
+
+    
+}
+.sec1_player_img{
+    width: 33%;
+    height: 100%;
+    float: left;
+}
+.sec1_player_img img{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.sec1_player_detail{
+    width: 66%;
+    height: 100%;
+   border-left:2px whitesmoke solid;
+    float: left;
+
+}
+.sec1_player_id{
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    /* padding: 10% 2%; */
+    height: 50%;
+    padding: 5% 5%;
+}
+.sec1_player_dollar{
+    font-size: 20px;
+    color: #fff;
+    padding: 5% 5%;
+
+}
+.sec1_footer{
+    width: 100%;
+    height: 10vh;
+    border-top: 2px solid #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec1_footer_help{
+    width: 100%;
+    height: 100%;
+    border-right: #fff 2px solid;
+    text-align: center;
+
+}
+.sec1_footer_help a{
+    /* margin: auto; */
+    height: 100%;
+   padding: 20%;
+}
+.sec1_footer_record{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+
+}
+.sec1_footer_record a{
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+
+
+}
+.sec2{
+    flex:1 1;
+    order:2;
+   border:2px whitesmoke solid;
+    background-color: transparent;
+    position: relative;
+
+    
+
+}
+.sec2_content{
+    height: 100%;
+    position: relative;
+    bottom: -5%;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec2_girl{
+    margin-right: 5%;
+    position: relative;
+    bottom: -3%;
+}
+.sec2_rooms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5%;
+    position: relative;
+    left: -5%;
+    bottom: -5%;
+}
+.sec2_rooms_entrance{
+    margin-bottom: 10%;
+    
+}
+.sec2_back{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: brown;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 20px;
+    transition: all .3s;
+}
+.sec2_back:hover{
+    background-color: rgb(230, 164, 65);
+}
