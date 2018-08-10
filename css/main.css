@@ -97,8 +97,24 @@ img{
 }
 .sec1_footer_help a{
     /* margin: auto; */
+    margin: 0;
     height: 100%;
+    width: 100%;
    padding: 20%;
+   background-color: #999;
+   position: relative;
+   display: inline-block;
+    overflow: hidden;
+}
+
+.sec1_footer_help a img{
+    display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
 }
 .sec1_footer_record{
     width: 100%;
@@ -111,9 +127,19 @@ img{
     width: 100%;
     height: 100%;
     padding: 20%;
-
-
+    background-color: #999;
+    display: inline-block;
+    overflow: hidden;
 }
+/* .sec1_footer_record a img{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+} */
 .sec2{
     flex:1 1;
     order:2;
